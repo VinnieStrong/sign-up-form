@@ -1,6 +1,107 @@
-h1 {
-    color: red;
+@font-face {
+    font-family: "typewriter";
+    src: url("../sign-up-form/mom___-webfont.woff2");
+        format(".woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+ body {
+    font-family: "typewriter";
+    display: flex;
 }
-span {
-    color: blue;
+.container {
+    flex: 1;
+    display: flex;
+    min-width: 350px;
+    max-width: 1000px;
+    padding-left: 20px;
+    justify-content: center;
+}  
+.logo {
+     
+    top: 220px;
+    left: 87px;
+
+    
+}
+    
+.left-part {
+   
+    flex: auto;
+    background-image: url(hotel-image.jpeg);
+    background-size: cover;
+    width: 40%;
+}
+.right-part {
+    flex: auto;
+    width: 60%;
+    padding-left: 10px;
+}
+.top {
+    background-color: rgb(104, 128, 113);
+    color: white;
+}
+.foot-cont {
+    flex: 1;
+    background-color: rgb(104, 128, 113);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: rgb(226, 191, 120);
+}
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+}
+a {
+    color:  rgb(226, 191, 120);
+}
+:invalid {
+    border-color: red;
+}
+:valid {
+    border-color: green;
+}
+:focus {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .name label,
+.name input,
+.email label,
+.email input,
+.password label,
+.password input {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.name label,
+.email label,
+.password label {
+  margin-bottom: 5px;
+}
+
+.name input,
+.email input,
+.password input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+  
+.name, .email, .password {
+    display: flex;
+    gap: 10px;
 }
